@@ -1,0 +1,32 @@
+Problem : Maximize Index Difference.
+Given an array `arr` of `n` positive integers. The task is to find the maximum of `j - i` subjected to the constraint of `arr[i] ≤ arr[j]` and `i ≤ j`.
+
+**Input Format:**
+The first line of input contains an integer `n`, denoting the size of array `arr`.
+The next line contains `n` space-separated integers, denoting elements of array `arr`.
+
+**Output Format:**
+Print maximum index difference `(j - i)` where `arr[i] ≤ arr[j]` and `i ≤ j`. Print `-1` in case no such index is found.
+
+**Example:**
+Input 1:
+```
+2
+1 10
+```
+Output 1:
+```
+1
+```
+Input 2:
+```
+9
+34 8 10 3 2 80 30 33 1
+```
+Output 2:
+```
+6
+```
+**Constraints:**
+- 1 ≤ n ≤ 5 * 10^5
+- 0 ≤ arr[i] ≤ 10^9
