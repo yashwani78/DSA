@@ -23,16 +23,16 @@ int main() {
         cin >> x;
 
         // Create a new node
-        Node *newNode = new Node(x);
+        Node *tmp = new Node(x);
 
         // If the list is empty, set the new node as both head and tail
         if (head == NULL) {
-            head = newNode;
-            tail = newNode;
+            head = tmp;
+            tail = tmp;
         } else {
             // Otherwise, add the new node to the end of the list
-            tail->next = newNode;
-            tail = newNode;
+            tail->next = tmp;
+            tail = tail->next;
         }
     }
 
